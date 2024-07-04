@@ -17,8 +17,6 @@ def canUnlockAll(boxes):
     Return True if all boxes can be opened, else return False
     """
 
-    if not boxes:
-        return True
 
     opened_boxes = set()
 
