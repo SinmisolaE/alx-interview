@@ -19,7 +19,7 @@ def canUnlockAll(boxes):
 
 
     if not boxes:
-        return True
+        return False
 
     opened_boxes = set()
 
