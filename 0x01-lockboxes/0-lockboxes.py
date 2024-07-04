@@ -18,6 +18,9 @@ def canUnlockAll(boxes):
     """
 
 
+    if not boxes:
+        return True
+
     opened_boxes = set()
 
     queue = [0]
