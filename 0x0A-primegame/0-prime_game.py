@@ -34,7 +34,7 @@ def isWinner(x, nums):
     for n in nums:
         if prime_counts[n] % 2 == 1:
             marie += 1
-        else:
+        elif prime_counts[n] % 2 == 0:
             ben += 1
 
     if marie > ben:
