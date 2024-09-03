@@ -12,7 +12,7 @@ def isWinner(x, nums):
         You cannot import any packages in this task
     """
 
-    if (x <= 1) or (not nums):
+    if (x < 1) or (not nums):
         return None
 
     n_max = max(nums)
