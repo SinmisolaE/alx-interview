@@ -30,16 +30,16 @@ def isWinner(x, nums):
     for i in range(1, n_max + 1):
         prime_counts[i] = prime_counts[i - 1] + (1 if is_prime[i] else 0)
 
-    marie, ben = 0, 0
+    maria, ben = 0, 0
     for n in nums:
         if prime_counts[n] % 2 == 1:
-            marie += 1
+            maria += 1
         else:
             ben += 1
 
-    if marie > ben:
-        return "Marie"
-    elif ben > marie:
+    if maria > ben:
+        return "Maria"
+    elif ben > maria:
         return "Ben"
     else:
         return None
